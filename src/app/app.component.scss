@@ -1,0 +1,106 @@
+$default-padding: 2rem;
+$default-font-size: 2rem;
+$primary-color: #E87613;
+$default-ml: 40px;
+*{
+  font-family: 'sure';
+  box-sizing: border-box;
+}
+
+section{
+  padding: $default-padding;
+  height:  100vh;
+  header{
+    display: flex;
+    justify-content: space-between;
+    div.left , div.right{
+      span{
+        font-size: $default-font-size;
+      }
+    }
+  }
+
+  section.hero{
+    display: flex;
+    padding: calc($default-padding *2);
+    justify-content: center;
+    div{
+      display: flex;
+      flex-direction: column;
+      span.name{
+        color: #2F3676;
+        font-size: calc($default-font-size * 2);
+      }
+      span.about{
+        width: 733px;
+        font-size: $default-font-size;
+      }
+      span.contact{
+        display: flex;
+        align-items: center;
+        padding: $default-padding  0px;
+
+        button{
+          color: $primary-color;
+          background-color: white;
+          font-size: $default-font-size;
+          padding: 19px;
+          width: 360px;
+          height: 80;
+          border: 3px solid $primary-color;
+          &:hover{
+            background-color: $primary-color;
+            color:white;
+          }
+        }
+
+        a{
+          img{
+            margin-left: $default-ml;
+            &:hover{
+              opacity: .7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.skills{
+  background-color: $primary-color;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+
+  div.top{
+    display: flex;
+    justify-content: center;
+    span.skills__text{
+      font-size: 288px;
+    }
+  }
+
+  div.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.top__row{
+      display: flex;
+      align-items: center;
+        img{
+          margin-right: 52px;
+        }
+    }
+
+     div.bottom__row{
+      display: flex;
+      align-items: center;
+        img{
+           margin-right: 32px;
+        }
+    }
+
+  }
+}
